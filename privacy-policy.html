@@ -1,0 +1,361 @@
+<title>TX Calculator Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600&display=swap">
+
+<style>
+  /* Layout: one measured column of document text, opened by a navy plate that
+     carries the app's own identity, with the hard facts set in mono. */
+  :root {
+    --ground: #F2F5F9;
+    --paper: #FFFFFF;
+    --ink: #101925;
+    --ink-soft: #52627A;
+    --rule: #DCE3EC;
+    --brand: #0D3B66;
+    --brand-deep: #061F38;
+    --brand-ink: #B9CBE0;
+    --accent: #B07400;
+    --accent-plate: #F0B429;
+    --panel: #ECF1F7;
+
+    --display: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    --body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #080F18;
+      --paper: #101A26;
+      --ink: #E7EDF5;
+      --ink-soft: #94A6BC;
+      --rule: #22303F;
+      --brand: #112F4E;
+      --brand-deep: #0A1724;
+      --brand-ink: #9FB6CF;
+      --accent: #F0B429;
+      --accent-plate: #F0B429;
+      --panel: #16222F;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #080F18;
+    --paper: #101A26;
+    --ink: #E7EDF5;
+    --ink-soft: #94A6BC;
+    --rule: #22303F;
+    --brand: #112F4E;
+    --brand-deep: #0A1724;
+    --brand-ink: #9FB6CF;
+    --accent: #F0B429;
+    --accent-plate: #F0B429;
+    --panel: #16222F;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .band { background: linear-gradient(135deg, var(--brand-deep), var(--brand)); }
+
+  .wrap {
+    max-width: 44rem;
+    margin-inline: auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  .band .wrap { padding-block: 44px 40px; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-plate);
+    margin: 0 0 14px;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(1.9rem, 5.5vw, 2.6rem);
+    line-height: 1.15;
+    text-wrap: balance;
+    color: #FFFFFF;
+    margin: 0 0 18px;
+  }
+
+  .meta {
+    display: grid;
+    /* Wide enough that the application ID sits on one line rather than
+       breaking mid-word; it still wraps as a last resort on a narrow phone. */
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 14px 28px;
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(185, 203, 224, 0.26);
+  }
+
+  .meta dt {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--brand-ink);
+    margin-bottom: 3px;
+  }
+
+  .meta dd {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  main { padding-block: 40px 56px; }
+
+  .summary {
+    background: var(--panel);
+    border-left: 4px solid var(--accent-plate);
+    border-radius: 0 10px 10px 0;
+    padding: 22px 24px;
+    margin-bottom: 44px;
+  }
+
+  .summary h2 {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+
+  .summary ul { margin: 0; padding-left: 1.15rem; display: grid; gap: 8px; }
+  .summary li::marker { color: var(--accent); }
+
+  section { margin-bottom: 38px; }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    text-wrap: balance;
+    margin: 0 0 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 24px 0 8px;
+  }
+
+  p { margin: 0 0 14px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+
+  ul.plain { margin: 0 0 14px; padding-left: 1.15rem; display: grid; gap: 7px; }
+  ul.plain li::marker { color: var(--ink-soft); }
+
+  code, .mono { font-family: var(--mono); font-size: 0.88em; }
+
+  code {
+    background: var(--panel);
+    border-radius: 4px;
+    padding: 1px 5px;
+    overflow-wrap: anywhere;
+  }
+
+  .facts {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 4px 20px;
+    margin: 18px 0;
+  }
+
+  .facts dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: minmax(8rem, auto) 1fr;
+    gap: 0;
+  }
+
+  .facts dt, .facts dd {
+    padding: 13px 0;
+    border-top: 1px solid var(--rule);
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .facts dl > dt:first-of-type, .facts dl > dt:first-of-type + dd { border-top: 0; }
+
+  .facts dt {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding-right: 18px;
+    align-self: center;
+  }
+
+  .facts dd { margin: 0; align-self: center; }
+
+  .none {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  @media (max-width: 460px) {
+    .facts dl { grid-template-columns: 1fr; }
+    .facts dt { padding-bottom: 0; }
+    .facts dd { padding-top: 4px; border-top: 0; }
+    .facts dl > dt:first-of-type + dd { border-top: 0; }
+  }
+
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent-plate);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-block: 24px 8px;
+    color: var(--ink-soft);
+    font-size: 0.86rem;
+  }
+  footer p { margin: 0 0 6px; }
+</style>
+
+<header class="band">
+  <div class="wrap">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>TX Calculator</h1>
+    <dl class="meta">
+      <div>
+        <dt>Developer</dt>
+        <dd>MEWHOOR Akshay.k</dd>
+      </div>
+      <div>
+        <dt>Application ID</dt>
+        <dd class="mono">com.mewhoor.txcalculator</dd>
+      </div>
+      <div>
+        <dt>Effective</dt>
+        <dd>18 October 2026</dd>
+      </div>
+      <div>
+        <dt>Contact</dt>
+        <dd>m.akskumar@gmail.com</dd>
+      </div>
+    </dl>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="summary">
+    <h2>In short</h2>
+    <ul>
+      <li>TX Calculator collects nothing, asks for no permissions, and has no way to reach the internet.</li>
+      <li>The readings you save stay in the app's private storage on your own phone.</li>
+      <li>There is no account, no advertising, no analytics and no tracking of any kind.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>What this app is</h2>
+    <p>TX Calculator works out the loading on a three-phase distribution transformer from readings you take yourself: line and phase voltages, the current on each output, and the neutral current. It runs entirely on your device.</p>
+  </section>
+
+  <section>
+    <h2>Information the app collects</h2>
+    <p>None. The app does not collect, transmit or sell personal information. It never asks for your name, email address, phone number, location or any device identifier, and it has no sign-in.</p>
+    <p>The only information it holds is what you type in yourself — meter readings, and the transformer name, reference number and notes you attach when you choose to save a reading.</p>
+  </section>
+
+  <section>
+    <h2>Where that information is kept</h2>
+    <p>Saved readings are written to the app's own private storage area on your device, which Android keeps isolated from other apps. Nothing is uploaded, and no copy is sent to the developer or to anyone else.</p>
+
+    <div class="facts">
+      <dl>
+        <dt>Stored</dt>
+        <dd>Meter readings, transformer name, reference number, notes</dd>
+        <dt>Where</dt>
+        <dd>Private app storage on your device (<code>SharedPreferences</code>, <code>MODE_PRIVATE</code>)</dd>
+        <dt>Sent off device</dt>
+        <dd><span class="none">Nothing</span></dd>
+        <dt>Accounts</dt>
+        <dd><span class="none">None required</span></dd>
+      </dl>
+    </div>
+
+    <h3>Android backup</h3>
+    <p>The app allows Android's standard backup service. If you have device backup switched on in your Android settings, your saved readings may be included in the backup that Android makes to <em>your own</em> Google account, along with the rest of your phone's app data. That backup belongs to you, is handled by Google under Google's terms, and is not visible to the developer. Turning off backup for this app in your Android settings stops it.</p>
+  </section>
+
+  <section>
+    <h2>Permissions</h2>
+    <p>TX Calculator requests no Android permissions at all. Its manifest declares no <code>uses-permission</code> entries — not even <code>android.permission.INTERNET</code>, so the app is technically unable to make a network connection.</p>
+  </section>
+
+  <section>
+    <h2>Analytics, advertising and third-party code</h2>
+    <p>There is no analytics, no crash reporting, no advertising and no tracking. The app bundles no third-party service libraries; it uses only Google's standard AndroidX and Material user-interface components, which run locally and send nothing anywhere.</p>
+    <p>Because nothing is collected, nothing is shared, sold or transferred to any third party.</p>
+  </section>
+
+  <section>
+    <h2>Deleting your data</h2>
+    <p>You stay in control of everything the app holds:</p>
+    <ul class="plain">
+      <li>Delete a single saved reading from the saved-transformers list inside the app.</li>
+      <li>Clear everything at once from Android <strong>Settings &rarr; Apps &rarr; TX Calculator &rarr; Storage &rarr; Clear storage</strong>.</li>
+      <li>Uninstalling the app removes all of its stored readings from the device.</li>
+    </ul>
+    <p>There is no server-side copy, so there is nothing to request from the developer and nothing for the developer to delete on your behalf.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>TX Calculator is a working tool for electrical staff and is not directed at children. It collects no personal information from anyone, children included.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If the app's handling of information ever changes, this policy will be updated and the effective date at the top revised before the change ships. Material changes will also be noted in the app's release notes on Google Play.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy or about the app can go to <strong>m.akskumar@gmail.com</strong>.</p>
+  </section>
+
+  <footer>
+    <p>TX Calculator &middot; MEWHOOR Akshay.k &middot; Mauritius</p>
+    <p>Last updated 18 October 2026.</p>
+  </footer>
+
+</main>
